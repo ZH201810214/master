@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://h109.jwopt.cn:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+  rabbitmq:
+    host: 192.168.13.83
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.13.82:8762/eureka,http://192.168.13.83:8763/eureka,http://192.168.13.84:8764/eureka
+env:
+  dev3
+# label:
+#   release
+girl:
+  name: zhenyu
+  age: 19
